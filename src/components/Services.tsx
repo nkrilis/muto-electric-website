@@ -11,8 +11,9 @@ const services = [
 
 const Services: React.FC = () => {
   return (
-    <Grid2 container spacing={3} sx={{ padding: '40px 20px',backgroundColor: '#e74c3c', }}>
-      {services.map((service, index) => (
+    <Grid2 container spacing={3} sx={{ padding: '40px 20px', backgroundColor: '#e74c3c', }}>
+      {services.map((service) => (
+        // eslint-disable-next-line react/jsx-key
         <Grid2>
           <Card>
             <CardContent>
