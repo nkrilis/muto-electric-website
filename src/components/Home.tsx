@@ -12,9 +12,7 @@ const Home: React.FC = () => {
         height: '75vh'
       }}
     >
-      <Typography variant="h1" sx={{ marginBottom: 3 }}>
-        Welcome to Electrician Co.
-      </Typography>
+<img src='muto-electric.png'></img>
       <Typography variant="body1" sx={{ marginBottom: 3 }}>
         Your trusted partner for all electrical services. Reliable, professional, and always on time!
       </Typography>

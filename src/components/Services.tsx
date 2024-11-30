@@ -11,7 +11,7 @@ const services = [
 
 const Services: React.FC = () => {
   return (
-    <Grid2 container spacing={3} sx={{ padding: '40px 20px',backgroundColor: '#e74c3c', }}>
+    <Grid2 container spacing={3} sx={{ padding: '40px 20px', backgroundColor: '#e74c3c', }}>
       {services.map((service, index) => (
         <Grid2>
           <Card>
