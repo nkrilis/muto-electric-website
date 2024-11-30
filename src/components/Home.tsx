@@ -16,7 +16,7 @@ const Home: React.FC = () => {
       }}
     >
       <Box flex={1} overflow="auto">
-        <img src='muto-electric.png'></img>
+        <img src='muto-electric.png' alt='company logo'></img>
         <Typography variant="body1" sx={{ marginBottom: 3 }}>
           Your trusted partner for all electrical services. Reliable, professional, and always on time!
         </Typography>
