@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 // Render the app inside the root element
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/muto-electric-website'>
       <Routes>
         <Route path="*" element={<App />}>
         </Route>
