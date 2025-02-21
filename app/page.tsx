@@ -2,6 +2,10 @@ import { Link } from "@heroui/link";
 import { Snippet } from "@heroui/snippet";
 import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
+import { Image } from "@heroui/image";
+import NextImage from "next/image";
+
+import logo from "../public/images/logo.png";
 
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
@@ -51,6 +55,13 @@ export default function Home() {
           </span>
         </Snippet>
       </div>
+      <Image
+        alt="HeroUI hero Image"
+        as={NextImage}
+        height={200}
+        src={logo.src}
+        width={300}
+      />
     </section>
   );
 }
