@@ -15,14 +15,15 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Make&nbsp;</span>
-        <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
-        <br />
         <span className={title()}>
-          websites regardless of your design experience.
+          Your Trusted Local Electrician for All Your&nbsp;
         </span>
+        <span className={title({ color: "red" })}>Electrical&nbsp;</span>
+        <br />
+        <span className={title()}>Needs!</span>
         <div className={subtitle({ class: "mt-4" })}>
-          Beautiful, fast and modern React UI library.
+          Offering reliable, safe, and expert electrical services for homes and
+          businesses.
         </div>
       </div>
 
@@ -36,32 +37,19 @@ export default function Home() {
           })}
           href={siteConfig.links.docs}
         >
-          Documentation
-        </Link>
-        <Link
-          isExternal
-          className={buttonStyles({ variant: "bordered", radius: "full" })}
-          href={siteConfig.links.github}
-        >
-          <GithubIcon size={20} />
-          GitHub
+          Request a Free Quote
         </Link>
       </div>
-
-      <div className="mt-8">
-        <Snippet hideCopyButton hideSymbol variant="bordered">
-          <span>
-            Get started by editing <Code color="primary">app/page.tsx</Code>
-          </span>
-        </Snippet>
+      <div>
+        <br />
+        <Image
+          alt="HeroUI hero Image"
+          as={NextImage}
+          height={250}
+          src={logo.src}
+          width={300}
+        />
       </div>
-      <Image
-        alt="HeroUI hero Image"
-        as={NextImage}
-        height={200}
-        src={logo.src}
-        width={300}
-      />
     </section>
   );
 }
